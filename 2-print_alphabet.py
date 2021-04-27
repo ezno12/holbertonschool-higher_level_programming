@@ -1,4 +1,4 @@
 #!/usr/bin/python3
 # Print lowercase
-for c in range(97, 123):
-    print("{}".format(chr(c)), end="\n")
+for x in range(ord("a"), ord("z") + 1):
+    print("{}".format(chr(x)), end="")
