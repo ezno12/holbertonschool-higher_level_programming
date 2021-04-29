@@ -10,8 +10,10 @@ def main():
     argv = sys.argv
     i = 0
     lenth = len(argv) - 1
-    if len(argv) == 1:
+    if lenth == 0:
         print("0 argument.")
+    elif lenth == 1:
+        print("{:d} argument:".format(l))
     else:
         print(lenth," argement: ")
         for args in sys.argv:
