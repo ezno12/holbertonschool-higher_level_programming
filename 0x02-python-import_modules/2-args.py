@@ -6,7 +6,7 @@ import sys
    arg:
      argv: inputed arg
 """
-def main():
+def main(*argv):
     argv = sys.argv
     i = 0
     lenth = len(argv) - 1
