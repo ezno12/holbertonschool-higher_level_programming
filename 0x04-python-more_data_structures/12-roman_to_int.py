@@ -17,4 +17,3 @@ def roman_to_int(roman_string):
             v += roman[roman_string[c]]
             c += 1
     return v
-
