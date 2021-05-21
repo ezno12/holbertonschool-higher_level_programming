@@ -1,0 +1,65 @@
+    >>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+    normal input
+    >>> matrix_divided([[1, 2, 3],[4, 5, 6]], 3)
+    [[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
+
+    Test div on zero
+    >>> matrix_divided([[1, 2, 3],[4, 5, 6]], 0)
+    Traceback (most recent call last):
+    ...
+    ZeroDivisionError: division by zero
+
+    Test div on not int
+    >>> matrix_divided([[1, 2, 3],[4, 5, 6]], "0")
+    Traceback (most recent call last):
+    ...
+    TypeError: div must be a number
+
+    Test on NO matrix
+    >>> matrix_divided(3, 5)
+    Traceback (most recent call last):
+    ...
+    TypeError: object of type 'int' has no len()
+
+    Test Zero on matrix
+    >>> matrix_divided(0, 5)
+    Traceback (most recent call last):
+    ...
+    TypeError: object of type 'int' has no len()
+
+    Test in normalt list
+    >>> matrix_divided([1, 2, 3], 3)
+    Traceback (most recent call last):
+    ...
+    TypeError: object of type 'int' has no len()
+
+    Test on empty matrix
+    >>> matrix_divided([[],[]], 3)
+    Traceback (most recent call last):
+    ...
+    TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+    Test on boolen
+    >>> matrix_divided(True, 3)
+    Traceback (most recent call last):
+    ...
+    TypeError: object of type 'bool' has no len()
+
+    Test on diffrent len of matrix
+    >>> matrix_divided([[1, 2, 3], [4, 5, 6, 7]], 3)
+    Traceback (most recent call last):
+    ...
+    TypeError: Each row of the matrix must have the same size
+
+    Test on one arg (matrix)
+    >>> matrix_divided([[1, 2, 3], [4, 5, 6, 7]])
+    Traceback (most recent call last):
+    ...
+    TypeError: matrix_divided() missing 1 required positional argument: 'div'
+
+    Test on three arg
+    >>> matrix_divided([[1, 2, 3], [4, 5, 6, 7]], 3, 2)
+    Traceback (most recent call last):
+    ...
+    TypeError: matrix_divided() takes 2 positional arguments but 3 were given
