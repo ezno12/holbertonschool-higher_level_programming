@@ -7,7 +7,13 @@ args is int
 def print_square(size):
     """
     print_square - print (#) square of integers.
+
     :param size: int
+
+    raise:
+         TypeError: if size not integer or float less then zero
+         ValueError: size less then zero
+
     :return: printed square (#)
     """
 
