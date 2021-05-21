@@ -12,6 +12,9 @@ def add_integer(a, b=98):
        a : integer
        b : integer
 
+    Raises:
+        TypeError: in case the arguments are not int or float
+
     return: integer
     """
     if not isinstance(a, int) and not isinstance(a, float):
