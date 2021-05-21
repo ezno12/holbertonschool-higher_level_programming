@@ -10,6 +10,12 @@ def matrix_divided(matrix, div):
 
     :param matrix: elements are divided.
     :param div:  int to divide the matrix.
+
+    Raise:
+            TypeError: div not int or float
+            TypeError: matix is not a list of list of number
+            ZeroDivisionError: Div is 0
+            
     :return:  divided list
     """
     if matrix is None or len(matrix) == 0:
