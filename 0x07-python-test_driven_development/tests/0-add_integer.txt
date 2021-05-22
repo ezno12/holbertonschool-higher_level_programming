@@ -31,6 +31,7 @@ Test float
 Test float and negiatve
     >>> add_integer(4.5, -1)
     3
+
 Test empty arg
 
     >>> add_integer()
