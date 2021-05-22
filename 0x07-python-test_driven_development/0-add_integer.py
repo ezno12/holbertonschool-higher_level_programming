@@ -1,23 +1,15 @@
 #!/usr/bin/python3
 """
-this module provide function adds two integers.
-args are int or float, and float cast as int.
+
+add integer or float module.
+
 """
 
 def add_integer(a, b=98):
     """
-    add_integer - add two integere
-
-    arg:
-       a : integer
-       b : integer
-
-    Raises:
-        TypeError: in case the arguments are not int or float
-
-    return: integer
+    add Two integer a and b.
     """
-
+    
     if type(a) not in [int, float]:
         raise TypeError('a must be an integer')
     if type(b) not in [int, float]:
