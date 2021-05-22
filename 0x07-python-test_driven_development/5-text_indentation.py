@@ -17,15 +17,17 @@ def text_indentation(text):
     :return: text
     """
 
-    if not isinstance(text, str):
+    if type(text) is not str:
         raise TypeError("text must be a string")
 
-    c = 0
-    while c < len(text):
-        if text[c] in [".", "?", ":"]:
-            print(text[c])
+    a = 0
+    while a < len(text):
+
+        if text[a] in [':', '.', '?']:
+            print(text[a])
             print()
-            c += 1
+            a += 1
+
         else:
-            print(text[c], end="")
-            c += 1
+            print(text[a], end='')
+        a += 1
