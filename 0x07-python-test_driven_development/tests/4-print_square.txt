@@ -29,8 +29,3 @@ Test string
     ...
     TypeError: size must be an integer
 
-Test boolean
-    >>> print_square(True)
-    #
-    >>> print_square(False)
-    >>>
