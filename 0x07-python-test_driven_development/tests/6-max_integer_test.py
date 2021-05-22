@@ -33,6 +33,10 @@ class TestMaxInteger(unittest.TestCase):
         """tests with float"""
         self.assertEqual(max_integer([1, 2, 3.3]), 3.3)
 
+    def test_string(self):
+        """string input"""
+        self.assertEqual(max_integer("Hello"), 'o')
+
 if __name__ == "__main__":
     unittest.main()
 
