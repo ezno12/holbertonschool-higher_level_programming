@@ -1,14 +1,12 @@
 #!/usr/bin/python3
 """
-Module: 0-read-file
+Modul: 0-read_file
 """
+
 
 def read_file(filename=""):
     """
-    Read_file - function to read a text file and lrint stdout
+    a function that reads a text file (UTF8) and prints it to stdout
     """
-    if filename is None:
-        return None
-
-    with open(filename, encoding="utf-8", mode="r") as file:
-        print(file.read(), end="")
+    with open(filename, "r", encoding="utf-8") as f:
+        print(f.read(), end="")
