@@ -11,4 +11,5 @@ def is_same_class(obj, a_class):
         obj: to check it 
         a_class: class to check on it
     """
+    
     return issubclass(a_class, type(obj))
