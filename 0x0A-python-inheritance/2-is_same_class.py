@@ -3,10 +3,8 @@
 modul: 2-is_same_class
 """
 
-
 def is_same_class(obj, a_class):
     """
-    return true if object == an instance of specified class or other wise false
+    determines if 'obj' is exactly an instance of 'a_class'
     """
-
-    return isinstance(a_class, type(obj))
+    return issubclass(a_class, type(obj))
