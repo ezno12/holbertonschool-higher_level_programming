@@ -13,4 +13,3 @@ class MyList(list):
         Print a sorted List
         """
         print(sorted(self))
-    
