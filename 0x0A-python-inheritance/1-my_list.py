@@ -1,17 +1,16 @@
 #!/usr/bin/python3
 """
-modul: 1-my_list
+    module: inherit list
 """
 
 
-class Mylist(list):
+class MyList(list):
     """
-    class: mylist
+        MyList
     """
-
     def print_sorted(self):
         """
-        print sorted elements of list
+        Print a sorted List
         """
-
         print(sorted(self))
+    
