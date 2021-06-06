@@ -5,20 +5,20 @@ modul: 10-square
 Rectangle = __import__('9-rectangle').Rectangle
 
 
-class Square:
+class Square(Rectangle):
     """
-    Class sqaure
+        Square Class
     """
     def __init__(self, size):
         """
-        Initialize
+            Initialize the square base on Rectangle
         """
         self.__size = size
-        self.integer_validator("size", size)
+        self.integer_validator('size', self.__size)
 
     def area(self):
         """
-        calc square
+        define area of the square
         """
         return self.__size ** 2
 
