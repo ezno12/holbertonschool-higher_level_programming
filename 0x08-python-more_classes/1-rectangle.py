@@ -21,8 +21,8 @@ class Rectangle:
             height (int): Thhe height of rectangle
 
         """
-        self.height = height
         self.width = width
+        self.height = height
 
     @property
     def width(self):
