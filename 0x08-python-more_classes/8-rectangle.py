@@ -79,16 +79,16 @@ class Rectangle:
         """
         return biggest rectangle based on the area
         """
-        r1 = rect_1.width * rect_1.height
-        r2 = rect_2.width * rect_2.height
+        area1 = rect_1.width * rect_1.height
+        area2 = rect_2.width * rect_2.height
 
         if not isinstance(rect_1, Rectangle):
             raise TypeError("rect_1 must be an instance of Rectangle")
         if not isinstance(rect_2, Rectangle):
             raise TypeError("rect_2 must be an instance of Rectangle")
-        if (r1 >= r2):
-            return r1
-        return r2
+        if (area1 >= area2):
+            return rect_1
+        return rect_2
 
     def area(self):
         """
