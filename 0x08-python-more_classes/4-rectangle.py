@@ -99,4 +99,4 @@ class Rectangle:
         """
         string representation of the rectangle
         """
-        return 'Rectabgle({}, {})'.format(self.__width, self.__height)
+        return 'Rectangle({}, {})'.format(self.__width, self.__height)
