@@ -79,8 +79,8 @@ class Rectangle:
         """
         return bigger rectangle
         """
-        area1 = rect_1.width * rect_1.height
-        area2 = rect_2.width * rect_2.height
+        area1 = rect_1.__width * rect_1.__height
+        area2 = rect_2.__width * rect_2.__height
 
         if isinstance(rect_1, Rectangle) is False:
             raise TypeError("rect_1 must be an instance of Rectangle")
