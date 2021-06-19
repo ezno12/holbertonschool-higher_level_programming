@@ -83,7 +83,7 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return 0
         return(self.__width * 2) + (self.__height * 2)
-    
+
     def __str__(self):
         """
         print rectangle with characeter #
@@ -93,4 +93,4 @@ class Rectangle:
         str = ""
         for i in range(self.__height):
             str += ("#" * (self.__width) + "\n")
-        return str
+        return str[0:-1]
