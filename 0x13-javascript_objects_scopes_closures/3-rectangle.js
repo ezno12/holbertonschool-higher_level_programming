@@ -1,5 +1,9 @@
 #!/usr/bin/node
-// class rectangle contain height & width
+
+/*
+class rectangle contain height & width
+print the square with 'X'
+*/
 
 module.exports = class Rectangle {
   constructor (w, h) {
