@@ -1,77 +1,40 @@
-# 0x13. Javascript - Objects, Scopes and Closures
-## Project Requirements
-### Javascript Scripts
-- First line of all files should be `#!/usr/bin/node`
-- Code should be `semistandard` compliant (version 11.0.0)
+# Holberton School - 0x13. Javascript - Objects, Scopes and Closures
+
+## Description
+
+The focus of this project is to learn:
+* how to create an object in Javascript
+* what `this` means
+* what `undefined` means
+* why the variable type and scope is important
+* what a closure is
+* what is a prototype is
+* how to inherit an object from another
+
+## Environment
+* __Environment:__ Ubuntu 14.04 LTS
+* __nodejs version:__ 6.11.3
+
+## Helpful Links
+* <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Basics">JavaScript object basics</a>
+* <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS">Object-oriented JavaScript</a>
+* <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes">Object prototypes</a>
+* <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Inheritance">Inheritance in JavaScript</a>
+* <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures">Closures</a>
+* <a href="https://alistapart.com/article/getoutbindingsituations">this/self</a>
 
 ## File Descriptions
-**0-rectangle.js:** an empty class `Rectangle` that defines a rectangle
-- Must use the `function` notation for defining your class
+- `0-recatangle.js` to `4-rectangle.js`: an increasingly complex class that define a rectangle .
+- `5-square.js` and `6-square.js` inherit from the rectangle class that define a square.
+- `7-occurrences.js`: returns the number of occurrences in a list.
+- `8-esrever.js`: returns the reserved version of a list.
+- `9-logme.js`: prints the number of argument already printed and the new argument value. 
+- `10-converter.js`: converts a number from base 10 to another base passed as argument.
 
-**1-rectangle.js:** a class `Rectangle` that defines a rectangle
-- Must use the `function` notation for defining your class
-- The constructor must take 2 arguments `w` and `h`
-- Initialize the instance attribute `width` with the value of `w`
-- Initialize the instance attribute `height` with the value of `h`
-
-**2-rectangle.js:** a class `Rectangle` that defines a rectangle
-- Must use the `function` notation for defining your class
-- The constructor must take 2 arguments `w` and `h`
-- Initialize the instance attribute `width` with the value of `w`
-- Initialize the instance attribute `height` with the value of `h`
-- If `w` or `h` is equal to 0 or not a positive integer, create an empty object
-
-**3-rectangle.js:** a class `Rectangle` that defines a rectangle
-- Must use the `function` notation for defining your class
-- The constructor must take 2 arguments `w` and `h`
-- Initialize the instance attribute `width` with the value of `w`
-- Initialize the instance attribute `height` with the value of `h`
-- If `w` or `h` is equal to 0 or not a positive integer, create an empty object
-- Create an instance method called `print()` that prints the rectangle using the character `X`
-
-**4-rectangle.js:** a class `Rectangle` that defines a rectangle
-- Must use the `function` notation for defining your class
-- The constructor must take 2 arguments `w` and `h`
-- Initialize the instance attribute `width` with the value of `w`
-- Initialize the instance attribute `height` with the value of `h`
-- If `w` or `h` is equal to 0 or not a positive integer, create an empty object
-- Create an instance method called `print()` that prints the rectangle using the character `X`
-- Create an instance method called `rotate()` that exchanges the `width` and the `height` of the rectangle
-- Create an instance method called `double()` that multiples the `width` and the `height` of the rectangle by 2
-
-**5-square.js:** a class `Square` that defines a square and inherits from `Square` of `5-square.js`
-- You must use the `prototype` notation for adding a new method
-- Create an instance method called `charPrint(c)` that prints the rectangle using the character `c`
- - If `c` is `undefined`, use the character `X`
-
-**6-square.js:** a class `Square` that defines a square and inherits from `Rectangle` of `4-rectangle.js`
-
-**7-occurrences.js:** a function that returns the number of occurrences in a list
-- Prototype: `exports.nbOccurences = function (list, search_element)`
-
-**8-esrever.js:** a function that returns the reversed version of a list:
-- Prototype: `exports.esrever = function (list)`
-- You are not allow to use the build-in method `reverse`
-
-**9-logme.js:** a function that prints the number of argument already printed and the new argument value
-- Prototype: `exports.logMe = function (item)`
-- Output format: `<number arguments already printed>: <current argument value>`
-
-**10-converter.js:** a function that converts a number from base 10 to another base passed as argument
-- Prototype: `exports.converter = function (base)`
-- You are not allowed to import any file
-- You are not allowed to declare any new variable (`var`, `let`, etc..)
-
-**100-map.js:** a script that imports an array and computes a new array
-- Script must import list from the file `100-data.js`
-- Must use a `map`
-- A new list must be created with each value equal to the value of the initial list, multipled by the index in the list
-- Print both the initial list and the new list
-
-**102-concat.js:** a script that concats 2 files
-- The first argument is the file path of the first source file
-- The second argument is the file path of the second source file
-- The third argument is the file path of the destination
+---
 
 ## Author
-*Bassem Yahia* - [Linkedin](https://tn.linkedin.com/in/bassem-ben-yahia)
+*Bassem Yahia* - [Linkedin](https://tn.linkedin.com/in/bassem-ben-yahia) / [Github](https://github.com/in/tennin12)
+
+## License
+Public Domain, no copyright protection
