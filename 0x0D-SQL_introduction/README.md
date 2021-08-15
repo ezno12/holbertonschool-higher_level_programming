@@ -1,64 +1,33 @@
-# SQL - Introduction
+Holberton School - 0x0D. SQL - Introduction
+## Description
 
-## List Databases
-Listing all databases on the server.
+The focus of this project is to learn:
+* what a database is.
+* what a relational database is.
+* what SQL stand for.
+* what MySQL is.
+* how to create a database in MySQL.
+* what DDL and DML stand for.
+* how to CREATE or ALTER a table.
+* how to SELECT data from a table.
+* how to INSERT, UPDATE or DELETE data.
+* what subqueries are.
+* how to use MySQL functions.
 
-## Create a Database
-Creating a database without failing if it already exists.
+## Helpful Links
+* <a hef="https://www.youtube.com/watch?v=FR4QIeZaPeM">What is Database & SQL</a>
+* <a href="https://www.digitalocean.com/community/tutorials/a-basic-mysql-tutorial">A Basic MySQL Tutorial<a/>
+* <a href="http://www.tomjewett.com/dbdesign/dbdesign.php?page=ddldml.php">Basic SQL statements: DDL and DML</a>
+* <a href="http://www.tomjewett.com/dbdesign/dbdesign.php?page=queries.php">Basic queries: SQL and RA</a>
+* <a href="http://www.tomjewett.com/dbdesign/dbdesign.php?page=functions.php">SQL technique: functions</a>
+* <a href="http://www.tomjewett.com/dbdesign/dbdesign.php?page=subqueries.php">SQL technique: subqueries</a>
+* <a href="https://dev.mysql.com/doc/refman/5.7/en/sql-syntax.html">MySQL 5.7 SQL Statement Syntax</a>
 
-## Delete a Database
-Deleting a database without failing if it doesn't exist.
+## File Descriptions
+- `TODO`
 
-## List Tables
-Listing the tables in the current database.
+## Author
+*Bassem Yahia* - [Linkedin](https://tn.linkedin.com/in/bassem-ben-yahia)
 
-## First Table
-Creating a table with a couple columns, only if it doesn't exist.
-
-## Full Description
-Showing the statement used to create a table.
-
-## List All in Table
-Showing all the rows in a table.
-
-## First Add
-Add a new row containing fixed values for all columns.
-
-## Count 89
-Counting the number of IDs in a row that are equal to 89.
-
-## Full Creation
-Creating a new table and adding some initial records.
-
-## List by Best
-Listing some of the columns in the records in a table ordered by one of them.
-
-## Select the Best
-Listing the students in a table that have scores over a certain threshold.
-
-## Cheating Is Bad
-Updating a record that matches a pattern.
-
-## Score too Low
-Removing records from a table that meet certain criteria.
-
-## Average
-Get the average number in a column in a table.
-
-## Number by Score
-Counting groups of records and naming pseudo-columns.
-
-## Say My Name
-Showing records in a table sorted by score that don't have a blank name.
-
-## Go to UTF8
-Convert a database from a character set to UTF-8.
-
-## Temperatures #0
-Showing the average temperatures in each city from a table of numerous measurements, and sorting the results in descending order.
-
-## Temperatures #1
-Showing the highest average temperatures in a two-month period in a table of temperature measurements.
-
-## Temperatures #2
-Showing the maximum temperatures measured in each state in a table of temperature measurements.
+## License
+Public Domain, no copyright protection
