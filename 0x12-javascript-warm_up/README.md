@@ -1,54 +1,43 @@
-# 0x12. Javascript - Warm up
-## Project Requirements
-### Javascript Scripts
-- First line of all files should be `#!/usr/bin/node`
-- Code should be `semistandard` compliant (version 11.0.0)
+# Holberton School - 0x12. Javascript - Warm up
+
+## Description
+
+The focus of this project is to learn:
+* how to run a Javascript script
+* how to create variables and constants
+* what the differences between var, const and let are
+* what a function is and how to use them
+* what all the data types available in Javascript are
+* how to use the if, if ... else statements
+* how to use comments
+* how to affect values to variables
+* how to use while and for loops
+* how to use break and continue statements
+* how to return a function that does not use any return statement
+* what scope of variables are
+* what the arithmetic operators are and how to use them
+* how to manipulate a dictionary
+* how to import a file
+
+## Environment
+* __Environment:__ Ubuntu 14.04 LTS
+* __nodejs version:__ 6.11.3
+
+## Helpful Links
+* <a href="https://docs.microsoft.com/en-us/scripting/javascript/javascript-fundamentals">JavaScript Fundamentals</a>
+* <a href="http://docs.python-requests.org/en/master/user/quickstart/">Quickstart with Requests package</a>
+* <a href="http://darrenderidder.github.io/talks/ModulePatterns/#/">Module patterns</a>
+* <a href="https://www.youtube.com/watch?v=sjyJBL5fkp8">var, let and const</a>
+* <a href="https://www.youtube.com/watch?v=vZBCTc9zHtI">Javascript Tutorial</a>
 
 ## File Descriptions
-**0-javascript_is_amazing.js:** a script that prints "Javascript is amazing"
+TODO
+`0-javascript_is_amazing.js`:
 
-**1-multi_languages.js:** a script that prints 3 lines:
-- The first line: "C is fun"
-- The second line: "Python is cool"
-- The third line: "Javascript is amazing"
-
-**2-arguments.js:** a script that prints a message depending of the number of arguments passed:
-- If no arguments are passed to the script, print "No argument"
-- If only one argument is passed to the script, print "Argument found"
-- Otherwise, print "Arguments found"
-
-**3-value_argument.js:** a script that prints the first argument passed to it
-
-**4-concat.js:** a script that prints two arguments passed to it, in the following format: " is "
-
-**5-to_integer.js:** a script that prints "My number: " if the first argument can be converted to an integer
-
-**6-multi_languages_loop.js:** a script that prints 3 lines: (like `1-multi_languages.js`) but by using an array of string and a loop
-
-**7-multi_c.js:** a script that prints x times "C is fun"
-
-**8-square.js:** a script that prints a square
-
-**9-add.js:** a script that prints the addition of 2 integers
-
-**10-factorial.js:** a script that computes and prints a factorial
-
-**11-second_biggest.js:** a script that searches the second biggest integer in the list of arguments
-
-**12-object.js:** update this script to replace the value 12 with 89
-
-    #!/usr/bin/node
-    const myObject = {
-      type: 'object',
-      value: 12
-    };
-    console.log(myObject);
-    /*
-    YOUR CODE HERE
-    */
-    console.log(myObject);
-
-**13-add.js:** a function that returns the addition of 2 integers
+---
 
 ## Author
 *Bassem Yahia* - [Linkedin](https://tn.linkedin.com/in/bassem-ben-yahia)
+
+## License
+Public Domain, no copyright protection
