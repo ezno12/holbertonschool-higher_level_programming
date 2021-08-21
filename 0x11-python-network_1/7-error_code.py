@@ -6,7 +6,7 @@ the body of the response.
 
 
 def main():
-    """ Entry point """
+    """ main """
     import requests
     from sys import argv
 
