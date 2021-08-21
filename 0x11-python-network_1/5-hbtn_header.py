@@ -6,7 +6,7 @@ the value of the variable X-Request-Id in the response header
 
 
 def main():
-    """ Entry point """
+    """ main """
     import requests
     from sys import argv
 
