@@ -5,7 +5,7 @@ fetches https://intranet.hbtn.io/status
 
 
 def main():
-    """ Entry point """
+    """ main """
     import requests
 
     url = 'https://intranet.hbtn.io/status'
