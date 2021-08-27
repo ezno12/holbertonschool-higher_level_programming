@@ -4,8 +4,14 @@ if __name__ == "__main__":
     import MySQLdb
     from sys import argv
 
+    host = "localhost"
+    user = argv[1]
+    passwd = argv[2]
+    db = argv[3]
+    port = 3306
+
     # Open database connection
-    db = MySQLdb.connect("localhost", argv[1], argv[2], argv[3], port=3306)
+    db = MySQLdb.connect(host, user, passwd, db, port)
 
     sql = "SELECT * FROM states ORDER BY states.id ASC"
     db.execute(sql)
