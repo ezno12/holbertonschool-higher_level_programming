@@ -12,9 +12,11 @@ if __name__ == "__main__":
         db=argv[3],
         port=3306
     )
-
-    db.execute("SELECT * FROM states ORDER BY id ASC")
-    data = db.fetchall()
+    # prepare a cursor object using cursor() method
+    cursor = db.cursor()
+    # Drop table if it already exist using execute() method.
+    cursor.execute("SELECT * FROM states ORDER BY id ASC")
+    data = cursor.fetchall()
     for row in data:
         print(row)
     db.close()
