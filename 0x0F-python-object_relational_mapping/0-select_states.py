@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-
+"""
+connect to database
+"""
 if __name__ == "__main__":
     import MySQLdb
     from sys import argv
