@@ -13,8 +13,7 @@ if __name__ == "__main__":
         port=3306
     )
 
-    sql = "SELECT * FROM states ORDER BY states.id ASC"
-    db.execute(sql)
+    db.execute('SELECT * FROM states ORDER BY states.id ASC')
     data = db.fetchall()
     for row in data:
         print(row)
