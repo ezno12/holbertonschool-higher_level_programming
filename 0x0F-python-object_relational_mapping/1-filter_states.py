@@ -17,8 +17,8 @@ if __name__ == "__main__":
     # prepare a cursor object using cursor() method
     cursor = db.cursor()
     # Drop table if it already exist using execute() method.
-    cursor.execute("SELECT * FROM artists WHERE name LIKE BINARY 'N%' \
-        ORDER BY id ASC")
+    cursor.execute("SELECT * FROM states WHERE name LIKE BINARY 'N%' ORDER BY id \
+    ASC")
     data = cursor.fetchone()
     while (data):
         print(data)
