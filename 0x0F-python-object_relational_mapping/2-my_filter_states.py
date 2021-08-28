@@ -17,8 +17,9 @@ if __name__ == "__main__":
     # prepare a cursor object using cursor() method
     cursor = db.cursor()
     # Drop table if it already exist using execute() method.
-    cursor.execute("SELECT * FROM states WHERE BINARY name = '{:s}'\
+    cursor.execute("SELECT * FROM states WHERE BINARY name = '{:s}' \
     ORDER BY id ASC".format(argv[4]))
     data = cursor.fetchone()
-    print(data)
-    db.close()
+    while (data):
+        print(data)
+        data = cursor.fetchone()
