@@ -16,10 +16,10 @@ if __name__ == "__main__":
     )
     # prepare a cursor object using cursor() method
     cursor = db.cursor()
-    Name = argv[4]
+    name = argv[4]
     # Drop table if it already exist using execute() method.
     cursor.execute("SELECT * FROM states WHERE name LIKE BINARY %s \
-    ORDER BY id ASC",  (Name, ))
+    ORDER BY id ASC",  (name, ))
     data = cursor.fetchone()
     while (data):
         print(data)
