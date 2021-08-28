@@ -16,9 +16,8 @@ if __name__ == "__main__":
     )
     # prepare a cursor object using cursor() method
     cursor = db.cursor()
-    state_arg = argv[4]
     cursor.execute("SELECT * FROM states WHERE name LIKE BINARY %s \
-    ORDER BY id ASC",  (state_arg, ))
+    ORDER BY id ASC",  (argv[4], ))
     data = cursor.fetchone()
     while (data):
         print(data)
