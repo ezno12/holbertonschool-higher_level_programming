@@ -21,7 +21,5 @@ if __name__ == "__main__":
         (SELECT id FROM states \
         WHERE name LIKE \
         BINARY '{:s}')".format(argv[4]))
-    data = cursor.fetchone()
-    while (data):
-        print(data)
-        data = cursor.fetchone()
+    data = cursor.fetchall()
+    print(", ".join(city[0] for city in data))
