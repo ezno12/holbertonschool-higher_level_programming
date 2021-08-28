@@ -1,34 +1,24 @@
 #!/usr/bin/python3
 """
-Once again, write a script that takes in arguments
-and displays all values in the states
-table of hbtn_0e_0_usa where name matches the argument.
-But this time, write one that
-is safe from MySQL injections!
+connect to database
 """
-import sys
-import MySQLdb
-
-
-def main():
-    conn = MySQLdb.connect(
-                        host="localhost",
-                        port=3306,
-                        user=sys.argv[1],
-                        passwd=sys.argv[2],
-                        db=sys.argv[3],
-                        charset="utf8"
-                            )
-    cur = conn.cursor()
-    search = sys.argv[4]
-    cur.execute("""SELECT id,name FROM states where name = %s
-                ORDER by id ASC""", (search,))
-    row = cur.fetchall()
-    for r in row:
-        print(r)
-    cur.close()
-    conn.close()
-
-
 if __name__ == "__main__":
-    main()
+    import MySQLdb
+    from sys import argv
+
+    # Open database connection
+    db = MySQLdb.connect(
+        host="localhost",
+        user=argv[1],
+        passwd=argv[2],
+        db=argv[3],
+        port=3306
+    )
+    # prepare a cursor object using cursor() method
+    cursor = db.cursor()
+    cursor.execute("SELECT * FROM states WHERE name LIKE BINARY %s \
+    ORDER BY id ASC",  (argv[4], ))
+    data = cursor.fetchone()
+    while (data):
+        print(data)
+        data = cursor.fetchone()
