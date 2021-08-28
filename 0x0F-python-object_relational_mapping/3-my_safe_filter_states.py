@@ -19,7 +19,7 @@ if __name__ == "__main__":
     Name = argv[4]
     # Drop table if it already exist using execute() method.
     cursor.execute("SELECT * FROM states WHERE BINARY name = '{:s}' \
-    ORDER BY id ASC", (Name,))
+    ORDER BY id ASC", (Name, ))
     data = cursor.fetchone()
     while (data):
         print(data)
