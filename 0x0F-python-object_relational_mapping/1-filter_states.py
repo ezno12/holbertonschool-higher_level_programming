@@ -23,5 +23,6 @@ if __name__ == "__main__":
     while (data):
         print(data)
         data = cursor.fetchone()
+
     cursor.close()
     db.close()
