@@ -16,14 +16,10 @@ if __name__ == "__main__":
     )
     # prepare a cursor object using cursor() method
     cursor = db.cursor()
-    name = argv[4]
-    # Drop table if it already exist using execute() method.
+    state_arg = argv[4]
     cursor.execute("SELECT * FROM states WHERE name LIKE BINARY %s \
-    ORDER BY id ASC",  (name, ))
-    data = cursor.fetcha()
+    ORDER BY id ASC",  (state_arg, ))
+    data = cursor.fetchone()
     while (data):
         print(data)
         data = cursor.fetchone()
-
-    cursor.close()
-    db.close()
