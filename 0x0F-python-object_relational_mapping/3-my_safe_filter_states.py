@@ -20,7 +20,9 @@ if __name__ == "__main__":
     # Drop table if it already exist using execute() method.
     cursor.execute("SELECT * FROM states WHERE name LIKE BINARY %s \
     ORDER BY id ASC",  (name, ))
-    data = cursor.fetchone()
-    while (data):
-        print(data)
-        data = cursor.fetchone()
+    data = cursor.fetchall()
+    for i in data:
+        print(i)
+
+    cursor.close()
+    db.close()
