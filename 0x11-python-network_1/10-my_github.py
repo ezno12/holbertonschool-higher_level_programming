@@ -9,15 +9,15 @@ def main():
     import requests
     from sys import argv
 
-    query = argv[1]
-    search_url = 'https://swapi.co/api/people/?search={}'.format(query)
-    r = requests.get(search_url)
-    json = r.json()
-    results = json.get('results')
-    names = []
-    print('Number of result: {}'.format(json.get('count')))
-    for result in results:
-        print(result['name'])
+    search_url = "https://api.github.com/user"
+    username = argv[1]
+    password = argv[2]
+    info = (username, password)
+    result = requests.get(search_url, auth=info)
+    try:
+        print(result.json()['id'])
+    except Exception:
+        print("None")
 
 if __name__ == '__main__':
     main()
